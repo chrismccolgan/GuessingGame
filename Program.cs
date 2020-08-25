@@ -14,7 +14,7 @@ namespace GuessingGame
 
             while (level != "easy" && level != "medium" && level != "hard" && level != "cheater")
             {
-                Console.Write("Please choose a difficulty level (Easy/Medium/Hard): ");
+                Console.Write("Please choose a difficulty level, don't be a \"Cheater\" (Easy/Medium/Hard): ");
                 level = Console.ReadLine().ToLower();
             }
 
