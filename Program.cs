@@ -8,13 +8,13 @@ namespace GuessingGame
         {
             int secretNumber = new Random().Next(1, 100);
 
-            Console.Write("Please choose a difficulty level, but not \"Cheater\" (Easy/Medium/Hard): ");
+            Console.Write("Please choose a difficulty level (Easy/Medium/Hard): ");
             string level = Console.ReadLine().ToLower();
             int chances = 0;
 
             while (level != "easy" && level != "medium" && level != "hard" && level != "cheater")
             {
-                Console.Write("Please choose a difficulty level, but not \"Cheater\" (Easy/Medium/Hard): ");
+                Console.Write("Please choose a difficulty level (Easy/Medium/Hard): ");
                 level = Console.ReadLine().ToLower();
             }
 
