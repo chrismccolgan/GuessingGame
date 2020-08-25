@@ -6,20 +6,21 @@ namespace GuessingGame
     {
         static void Main(string[] args)
         {
+            int secretNumber = 42;
             for (int i = 0; i < 4; i++)
             {
                 Console.Write("Guess the secret number: ");
                 string answer = Console.ReadLine();
                 int num = int.Parse(answer);
-                int secretNumber = 42;
 
                 if (num == secretNumber)
                 {
                     Console.WriteLine("Congratulations!");
+                    break;
                 }
                 else if (num != secretNumber)
                 {
-                    Console.WriteLine("Nope");
+                    Console.WriteLine($"Nope! Chances remaining: {3-i}");
                 }
             }
         }
