@@ -37,7 +37,7 @@ namespace GuessingGame
 
             for (int i = 0; i < chances; i++)
             {
-                Console.Write($"Guess the secret number: ");
+                Console.Write($"Guess the secret number, this is guess {i+1}: ");
                 string answer = Console.ReadLine();
                 int num = int.Parse(answer);
 
