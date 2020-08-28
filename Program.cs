@@ -35,11 +35,17 @@ namespace GuessingGame
                 chances = 10000;
             }
 
+            int[] numbersGuessed = new int[chances];
+
             for (int i = 0; i < chances; i++)
             {
-                Console.Write($"Guess the secret number: ");
+                Console.WriteLine("Number Guessed " + "=" + "[{0}]", string.Join(", ", numbersGuessed));
+
+                Console.Write("Guess the secret number: ");
                 string answer = Console.ReadLine();
                 int num = int.Parse(answer);
+                numbersGuessed[i] =  num;
+                
 
                 if (num == secretNumber)
                 {
